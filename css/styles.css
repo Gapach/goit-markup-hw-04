@@ -217,6 +217,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+/* Companii icon */
+.companii-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--background-btn-filtres);
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+}
+
 /* what are we doing */
 .servises {
   padding-top: 0;
@@ -315,6 +327,42 @@ body {
 .social-list-link:focus {
   background-color: #404bbf;
 }
+/* Customers */
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customer-list-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+.customers-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  fill: #8e8f99;
+  border-radius: 4px;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.customers-link:focus,
+.customers-link:hover {
+  border: 1px solid #404bbf;
+  fill: #404bbf;
+}
 /* footer */
 
 .footer {
@@ -348,6 +396,43 @@ body {
   letter-spacing: 0.02em;
   color: var(--background-btn-filtres);
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-info {
+  margin-right: 120px;
+}
+/* Social media */
+.social-media-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--backround-color);
+}
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.social-media-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.social-media-icon {
+  fill: #f4f4fd;
+}
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: #31d0aa;
+}
 
 /* portfolio */
 
@@ -378,6 +463,8 @@ body {
 }
 .modal-open-button:focus,
 .modal-open-button:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border: 1px solid transparent;
   color: var(--backround-color);
   background-color: var(--accent-color);
@@ -417,4 +504,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+.card-item:hover,
+.card-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
